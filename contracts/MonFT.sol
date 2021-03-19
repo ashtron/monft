@@ -26,13 +26,23 @@ contract MonFT is ERC721 {
         return newMonId;
     }
 
-    function generateGeneSequence() public returns (uint256) {
-        // Pseudorandom for now.
-        uint256 geneSequence = uint(keccak256(abi.encodePacked(block.number))) % 10 ** 5;
+    function generateGeneSequence() public view returns (uint256) {
+        uint256 geneSequence = generateRandomNumber() % 10 ** 4;
         return geneSequence;
     }
 
+    function generateRandomNumber() public view returns (uint256) {
+        // Pseudorandom for now.
+        return uint(keccak256(abi.encodePacked(block.number)));
+    }
+
+    function mutate(uint256 tokenId) public {
+        uint256 newGeneSequence = generateGeneSequence();
+        geneSequences[tokenId] = newGeneSequence;
+    }
+
     function transferMon(address from, address to, uint256 tokenId) public {
+        mutate(tokenId);
         safeTransferFrom(from, to, tokenId);
     }
 }

@@ -72,8 +72,8 @@
       ]
     },
     "/home/ashton/dev/monft/contracts/MonFT.sol": {
-      "lastModificationDate": 1616181527063,
-      "contentHash": "7b7c39dd8da916a2ed88afdf204eb575",
+      "lastModificationDate": 1616184725526,
+      "contentHash": "cd64870789d08ee1df23795e7edc8c55",
       "sourceName": "contracts/MonFT.sol",
       "solcConfig": {
         "version": "0.8.0",

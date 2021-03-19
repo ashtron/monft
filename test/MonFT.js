@@ -27,7 +27,7 @@ describe("MonFT contract", function () {
         const geneSequence = Number(await monFT.geneSequences(1));
 
         // Expect a five-digit gene sequence.
-        expect(String(geneSequence.length === 5));
+        expect(String(geneSequence).length === 5);
       });
   });
 
@@ -37,6 +37,18 @@ describe("MonFT contract", function () {
       await monFT.transferMon(addr1.address, addr2.address, 1);
 
       expect(await monFT.ownerOf(1)).to.equal(addr2.address);
+    });
+  });
+
+  describe("mutate", function () {
+    it("Should change gene sequence on transfer", async function () {
+      await monFT.mintMon();
+      const oldGeneSequence = await monFT.geneSequences(1);
+
+      await monFT.transferMon(addr1.address, addr2.address, 1);
+      const newGeneSequence = await monFT.geneSequences(1);
+      
+      expect(oldGeneSequence).not.to.equal(newGeneSequence);
     });
   });
 });

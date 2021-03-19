@@ -2,11 +2,11 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/ashton/dev/monft/contracts/Token.sol": {
-      "lastModificationDate": 1616169988923,
+      "lastModificationDate": 1616170710787,
       "contentHash": "eb1a843e656e2be10913c93ed8abd0f4",
       "sourceName": "contracts/Token.sol",
       "solcConfig": {
-        "version": "0.7.3",
+        "version": "0.7.0",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -42,7 +42,7 @@
       "contentHash": "c20b2460755f312099ccd61427237ded",
       "sourceName": "hardhat/console.sol",
       "solcConfig": {
-        "version": "0.7.3",
+        "version": "0.7.0",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -69,6 +69,5222 @@
       ],
       "artifacts": [
         "console"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/MonFT.sol": {
+      "lastModificationDate": 1616170684111,
+      "contentHash": "f14801f9892a70dbf29888e087f80c02",
+      "sourceName": "contracts/MonFT.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./openzeppelin-contracts/token/ERC721/ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MonFT"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "70547ee51920fc1cfd0943ce2276441b",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC721Receiver.sol",
+        "./extensions/IERC721Metadata.sol",
+        "./extensions/IERC721Enumerable.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/Strings.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "93a5aa8a276e028a4f46f22b5d8f7bd3",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "e6d69a0b5b95ac1112eb4746a2d66f3e",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "75cedcb24edaec014d2071ed59a03ff3",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC721/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC721/extensions/IERC721Enumerable.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "f2ae82a09cc670ca19d644f60990b94d",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/Address.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "37103cdc416efc2601c6f6734044b559",
+      "sourceName": "contracts/openzeppelin-contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/Context.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "bc047f55d4e6dcc5a9c7ee096f530312",
+      "sourceName": "contracts/openzeppelin-contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/Strings.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "e575d915a7dbf0decd510699a7fd53dc",
+      "sourceName": "contracts/openzeppelin-contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "a9a5319dff9088c6ffe757ea1c2a6729",
+      "sourceName": "contracts/openzeppelin-contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "9a04322bb8f6b8f2767d8358d1d2537b",
+      "sourceName": "contracts/openzeppelin-contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC721/presets/ERC721PresetMinterPauserAutoId.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "09061583db996cbd0708ac6c4f925436",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC721/presets/ERC721PresetMinterPauserAutoId.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../extensions/ERC721Enumerable.sol",
+        "../extensions/ERC721Burnable.sol",
+        "../extensions/ERC721Pausable.sol",
+        "../../../access/AccessControlEnumerable.sol",
+        "../../../utils/Context.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721PresetMinterPauserAutoId"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC721/extensions/ERC721Enumerable.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "11629722b0e3c53cb55733af5176cd33",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "./IERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Enumerable"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC721/extensions/ERC721Burnable.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "c451d6197061b5e0d446b7171af0dc01",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC721/extensions/ERC721Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Burnable"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC721/extensions/ERC721Pausable.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "a2c749b0983611257fc97395b3cff590",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC721/extensions/ERC721Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Pausable"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/access/AccessControlEnumerable.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "5486abf1e4411b43527f415fbdd3d3a2",
+      "sourceName": "contracts/openzeppelin-contracts/access/AccessControlEnumerable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AccessControl.sol",
+        "../utils/structs/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControlEnumerable",
+        "IAccessControlEnumerable"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/Counters.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "86ddbfba30a7d811a86f54416c364be3",
+      "sourceName": "contracts/openzeppelin-contracts/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/security/Pausable.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "835673b68fdeaf41b38c84e966e8630b",
+      "sourceName": "contracts/openzeppelin-contracts/security/Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/access/AccessControl.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "dadfa999b2646e5dd2c04a533803b351",
+      "sourceName": "contracts/openzeppelin-contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl",
+        "IAccessControl"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/structs/EnumerableSet.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "212c7600a5dc9486dc7c82a82144fb88",
+      "sourceName": "contracts/openzeppelin-contracts/utils/structs/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC20/extensions/ERC20Snapshot.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "34ddee023aef78b296f9ecdd7f51f76a",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC20/extensions/ERC20Snapshot.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../utils/Arrays.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Snapshot"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "6836f5df3efadeec81b0e557a4dc3ee9",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/Arrays.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "bd343ac153d3a2dbb015dcaf38ea21d5",
+      "sourceName": "contracts/openzeppelin-contracts/utils/Arrays.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Arrays"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "c7492a9ab60ba083d345f893d5e0f33c",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "aeeba45751afed9606d3aa25675ba510",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "21857a03e0374037ea2a2fc5e4ad9e17",
+      "sourceName": "contracts/openzeppelin-contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/MathMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "d3beed448eb582be3590458b450e2720",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/MathMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MathMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ArraysImpl.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "e51e411660353a84b5e9a73b72d83e59",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ArraysImpl.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Arrays.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ArraysImpl"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC20/presets/ERC20PresetMinterPauser.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "a6530e2dcbbb51d2e748f97f14662e49",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC20/presets/ERC20PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../extensions/ERC20Burnable.sol",
+        "../extensions/ERC20Pausable.sol",
+        "../../../access/AccessControlEnumerable.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PresetMinterPauser"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC20/extensions/ERC20Burnable.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "279d6a0c2fd093b667febc2c4c2e6945",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC20/extensions/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC20/extensions/ERC20Pausable.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "49ab91d0e0caa17deaeafc25f32e2bb9",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC20/extensions/ERC20Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Pausable"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC1155/presets/ERC1155PresetMinterPauser.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "fa7f14a78f1a418ec5ebb1dcfd3c0635",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC1155/presets/ERC1155PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol",
+        "../extensions/ERC1155Burnable.sol",
+        "../extensions/ERC1155Pausable.sol",
+        "../../../access/AccessControlEnumerable.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155PresetMinterPauser"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC1155/ERC1155.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "8bbbcb8ea0bf31c21135537145a51605",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC1155/ERC1155.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1155.sol",
+        "./IERC1155Receiver.sol",
+        "./extensions/IERC1155MetadataURI.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC1155/extensions/ERC1155Burnable.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "35ff9df3b900369f4cb8dc51ddccb1fa",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC1155/extensions/ERC1155Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Burnable"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC1155/extensions/ERC1155Pausable.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "7f5b2bede092cc2405a2a3c6b75b85a2",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC1155/extensions/ERC1155Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol",
+        "../../../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Pausable"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC1155/IERC1155.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "79f5ef33a7ed00ffb7dfdcd4339a946c",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC1155/IERC1155.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC1155/IERC1155Receiver.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "742b0a3c77abd8d717acd978a6f002cb",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC1155/IERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155Receiver"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "f67c3445291b9506fdff7d6527c9e552",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155MetadataURI"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/AccessControlEnumerableMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "fba3694476bfc2cf9c8f1138736c7f5f",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/AccessControlEnumerableMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControlEnumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControlEnumerableMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/EnumerableSetMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "63e6d1b126c8855333cd1c7b9c4b2f5b",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/EnumerableSetMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/structs/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableAddressSetMock",
+        "EnumerableBytes32SetMock",
+        "EnumerableUintSetMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/structs/EnumerableMap.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "c0b43f8a087acc75648a660da90f6b03",
+      "sourceName": "contracts/openzeppelin-contracts/utils/structs/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/EnumerableMapMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "974d6d12be0edbf7efee953c606566f4",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/EnumerableMapMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/structs/EnumerableMap.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableMapMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/AccessControlMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "fa79ea7a0dbdc58976ad9d80043d9b30",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/AccessControlMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControlMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/governance/TimelockController.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "d7007accad3b6d61e08542a3d40c936c",
+      "sourceName": "contracts/openzeppelin-contracts/governance/TimelockController.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TimelockController"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC1155/utils/ERC1155Receiver.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "baa5a1c248a5f5bfae096368ccf4bc5c",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC1155/utils/ERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC1155Receiver.sol",
+        "../../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Receiver"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC1155ReceiverMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "0458e3bf322fce0a3b49e819ba34dea4",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC1155ReceiverMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/IERC1155Receiver.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155ReceiverMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/introspection/ERC165Checker.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "a65c606ba9eda6f9d0135c28683d1595",
+      "sourceName": "contracts/openzeppelin-contracts/utils/introspection/ERC165Checker.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Checker"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC165CheckerMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "185db21182a9486960b8c9368cc69573",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC165CheckerMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/ERC165Checker.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165CheckerMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC165/ERC165InterfacesSupported.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "bbe6f7aa497f8e31c318bad74e76e930",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC165/ERC165InterfacesSupported.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165InterfacesSupported",
+        "SupportsInterfaceWithLookupMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/PausableMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "d54f5205167a2a79ffcca9e45ada105f",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/PausableMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PausableMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC721PausableMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "4efbd07d5fe69b72fe27128e399d20ba",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC721PausableMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/extensions/ERC721Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721PausableMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC20PausableMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "59d86821e54d072e526cecf514b97d66",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC20PausableMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/ERC20Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PausableMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC1155PausableMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "80b9945a30b2ca2aaff4bd25b69191c4",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC1155PausableMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155Mock.sol",
+        "../token/ERC1155/extensions/ERC1155Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155PausableMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC1155Mock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "c5d5b960d207b05a926011cec3599cc2",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC1155Mock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/ERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Mock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/proxy/ERC1967/ERC1967Proxy.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "2c4c5fc9919ade7b998db5a903432de8",
+      "sourceName": "contracts/openzeppelin-contracts/proxy/ERC1967/ERC1967Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Proxy.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1967Proxy"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/proxy/Proxy.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "f357a7069052b75c96929e1a1327d299",
+      "sourceName": "contracts/openzeppelin-contracts/proxy/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/proxy/transparent/TransparentUpgradeableProxy.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "52f0c82ba628686d10d661eb4a661a00",
+      "sourceName": "contracts/openzeppelin-contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1967/ERC1967Proxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TransparentUpgradeableProxy"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/proxy/transparent/ProxyAdmin.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "7467eeaf3de82520433b387801ab200a",
+      "sourceName": "contracts/openzeppelin-contracts/proxy/transparent/ProxyAdmin.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TransparentUpgradeableProxy.sol",
+        "../../access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ProxyAdmin"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/access/Ownable.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "17d9f40220b0ab370db2c77e7c92c4ef",
+      "sourceName": "contracts/openzeppelin-contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/proxy/beacon/UpgradeableBeacon.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "ce8ae93e65f6e34105b9abc9d1be67ee",
+      "sourceName": "contracts/openzeppelin-contracts/proxy/beacon/UpgradeableBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBeacon.sol",
+        "../../access/Ownable.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UpgradeableBeacon"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/proxy/beacon/IBeacon.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "e1e6df7276b048c6b544c757c6e179ec",
+      "sourceName": "contracts/openzeppelin-contracts/proxy/beacon/IBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IBeacon"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/proxy/beacon/BeaconProxy.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "80406bc4d576ba1caedf46fe0fbc46b7",
+      "sourceName": "contracts/openzeppelin-contracts/proxy/beacon/BeaconProxy.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBeacon.sol",
+        "../Proxy.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BeaconProxy"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/OwnableMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "f382d7e0f4a2f882f69345a80778199b",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/OwnableMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OwnableMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/escrow/Escrow.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "4c62091304bff36a70d97c1732cc1f4c",
+      "sourceName": "contracts/openzeppelin-contracts/utils/escrow/Escrow.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../access/Ownable.sol",
+        "../Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Escrow"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/security/PullPayment.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "7d00946cba43d898954b2996f8461559",
+      "sourceName": "contracts/openzeppelin-contracts/security/PullPayment.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/escrow/Escrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PullPayment"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/PullPaymentMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "3f3cbd01fc5ebdfa93cc38d56a951404",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/PullPaymentMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../security/PullPayment.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PullPaymentMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/escrow/ConditionalEscrow.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "a97dcf4527039a2d054121e6f66f393e",
+      "sourceName": "contracts/openzeppelin-contracts/utils/escrow/ConditionalEscrow.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Escrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConditionalEscrow"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/escrow/RefundEscrow.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "44238af88290d8bfee1d846efc68bcd5",
+      "sourceName": "contracts/openzeppelin-contracts/utils/escrow/RefundEscrow.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ConditionalEscrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RefundEscrow"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ConditionalEscrowMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "63b04414ec27ee252e7e7431785f5a63",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ConditionalEscrowMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/escrow/ConditionalEscrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConditionalEscrowMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "e5187f826fe23aac7606440680f16de3",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC20/utils/TokenTimelock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "f4d1683aa25e0ef733262378d55c3e55",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC20/utils/TokenTimelock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TokenTimelock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/SafeERC20Helper.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "2a88275b189765e671795dd8a6585412",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/SafeERC20Helper.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol",
+        "../token/ERC20/IERC20.sol",
+        "../token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20NoReturnMock",
+        "ERC20ReturnFalseMock",
+        "ERC20ReturnTrueMock",
+        "SafeERC20Wrapper"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC777/ERC777.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "4efbb69894abae8fcf57c9d342dab35d",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC777/ERC777.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC777.sol",
+        "./IERC777Recipient.sol",
+        "./IERC777Sender.sol",
+        "../ERC20/IERC20.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/introspection/IERC1820Registry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC777"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC777/IERC777.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "b5a217ad2af8ed08108788678245eb0e",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC777/IERC777.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC777/IERC777Recipient.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "28db9244cc847ef290e8ca4576cd920e",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC777/IERC777Recipient.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Recipient"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC777/IERC777Sender.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "c8c3e65073fcb27e64313d3fba227f71",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC777/IERC777Sender.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Sender"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/introspection/IERC1820Registry.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "39640daa5aa78a0b8968db09e447634e",
+      "sourceName": "contracts/openzeppelin-contracts/utils/introspection/IERC1820Registry.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820Registry"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC777/presets/ERC777PresetFixedSupply.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "1e3c8e922e83686d4e483863fa1b6d4c",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC777/presets/ERC777PresetFixedSupply.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC777.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC777PresetFixedSupply"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC777SenderRecipientMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "21d9c24ad9e7e8229e335546ae97028b",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC777SenderRecipientMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC777/IERC777.sol",
+        "../token/ERC777/IERC777Sender.sol",
+        "../token/ERC777/IERC777Recipient.sol",
+        "../utils/Context.sol",
+        "../utils/introspection/IERC1820Registry.sol",
+        "../utils/introspection/ERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC777SenderRecipientMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/introspection/ERC1820Implementer.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "c825df9379c32185e658c34e758b4b4a",
+      "sourceName": "contracts/openzeppelin-contracts/utils/introspection/ERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1820Implementer"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/introspection/IERC1820Implementer.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "da8e63116dc7c44d084104efff723f07",
+      "sourceName": "contracts/openzeppelin-contracts/utils/introspection/IERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820Implementer"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC1820ImplementerMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "932975c1e28f595457f9621603c95220",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC1820ImplementerMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/ERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1820ImplementerMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/Create2Impl.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "0be70b22bfb49a8ebfdff5121a032202",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/Create2Impl.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Create2.sol",
+        "../utils/introspection/ERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Create2Impl"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/Create2.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "92772f75e8ba6c3bdc71b5d1f76c3735",
+      "sourceName": "contracts/openzeppelin-contracts/utils/Create2.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Create2"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC777Mock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "c48a6be2fe3f463fb0ad0fca44c60af9",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC777Mock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol",
+        "../token/ERC777/ERC777.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC777Mock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/proxy/utils/Initializable.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "b4f4dc8b594d9ae3678d22a9301bb792",
+      "sourceName": "contracts/openzeppelin-contracts/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/SingleInheritanceInitializableMocks.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "4877cf64f96f8a8a9db4f6bd69c4024d",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/SingleInheritanceInitializableMocks.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MigratableMockV1",
+        "MigratableMockV2",
+        "MigratableMockV3"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/RegressionImplementation.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "f84047f5ce83d3ba58db4a65fe457294",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/RegressionImplementation.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Implementation1",
+        "Implementation2",
+        "Implementation3",
+        "Implementation4"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/MultipleInheritanceInitializableMocks.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "9078c80b7f55e80df9de60c375b2e42f",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/MultipleInheritanceInitializableMocks.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SampleChild",
+        "SampleFather",
+        "SampleGramps",
+        "SampleHuman",
+        "SampleMother"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/InitializableMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "368744efb24f961e7160aa7db25396e4",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/InitializableMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "InitializableMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ClonesMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "5e772c6a20bde0e214bb128a1618298c",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ClonesMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Clones.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ClonesMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/proxy/Clones.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "08b85f1ee6d839857b6feaa519390069",
+      "sourceName": "contracts/openzeppelin-contracts/proxy/Clones.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Clones"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/AddressImpl.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "8b0e9a1115765a1ef86e5794e15b1acb",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/AddressImpl.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AddressImpl"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/finance/PaymentSplitter.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "1a70427fb27737af6822ade1f2c47654",
+      "sourceName": "contracts/openzeppelin-contracts/finance/PaymentSplitter.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Address.sol",
+        "../utils/Context.sol",
+        "../utils/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PaymentSplitter"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/math/SafeMath.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "9f282272a197e5e800ef035117e86f2f",
+      "sourceName": "contracts/openzeppelin-contracts/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/SafeMathMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "2acf3f99dd91beb13d44f2e0ddfe623a",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/SafeMathMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMathMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC1155BurnableMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "079358b9bb0906ef5cfc9b19c37b8f63",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC1155BurnableMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/extensions/ERC1155Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155BurnableMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC721EnumerableMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "126a5b742f408682e0acde8d2fff52eb",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC721EnumerableMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/extensions/ERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721EnumerableMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC1155/utils/ERC1155Holder.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "ff1de24b596f419da236d867da1c2c5b",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC1155/utils/ERC1155Holder.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Holder"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/introspection/ERC165Storage.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "463cdcc1b1e93ed93de97e19ff265db2",
+      "sourceName": "contracts/openzeppelin-contracts/utils/introspection/ERC165Storage.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Storage"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC165StorageMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "5e1f7907867ff274418400e6a41d38a7",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC165StorageMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/ERC165Storage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165StorageMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC165Mock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "c7f58bbc5a971e909e2aab5aa43051cb",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC165Mock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Mock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ReentrancyAttack.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "2a7829f676e3dd8c634c5ac037edfcf7",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ReentrancyAttack.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyAttack"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ReentrancyMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "6dffb6f2dbc0f275cc1014a7624f19ac",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ReentrancyMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../security/ReentrancyGuard.sol",
+        "./ReentrancyAttack.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "1d45ab4bd9b10c657bd26a957be5bcd9",
+      "sourceName": "contracts/openzeppelin-contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC721BurnableMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "d7de50cb7fd89c154891b71b62969058",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC721BurnableMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/extensions/ERC721Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721BurnableMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC20/presets/ERC20PresetFixedSupply.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "f944eb1294159f29f947befbf2167c1a",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC20/presets/ERC20PresetFixedSupply.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../extensions/ERC20Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PresetFixedSupply"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC20BurnableMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "53a669ee1c4da77b556d55844ebcd204",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC20BurnableMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/ERC20Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20BurnableMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ContextMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "3489164db4d778dfaf7df0cd3460ef57",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ContextMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ContextMock",
+        "ContextMockCaller"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC2771ContextMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "4e70559c36e02f70ae0b1e59c284d452",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC2771ContextMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ContextMock.sol",
+        "../metatx/ERC2771Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC2771ContextMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/metatx/ERC2771Context.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "058a50e644de9b442031418c9ebf2817",
+      "sourceName": "contracts/openzeppelin-contracts/metatx/ERC2771Context.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC2771Context"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC20/extensions/draft-ERC20Permit.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "299a0ac5116590e9a45388dc451d1016",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC20/extensions/draft-ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./draft-IERC20Permit.sol",
+        "../ERC20.sol",
+        "../../../utils/cryptography/draft-EIP712.sol",
+        "../../../utils/cryptography/ECDSA.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC20/extensions/draft-IERC20Permit.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "0d702bf86b77a11941c6007e95fc1d05",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC20/extensions/draft-IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/cryptography/draft-EIP712.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "561ab4458b81118bb0b90d4d313dd74d",
+      "sourceName": "contracts/openzeppelin-contracts/utils/cryptography/draft-EIP712.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "6eed56e818c129b4e581779dbbd351a6",
+      "sourceName": "contracts/openzeppelin-contracts/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/EIP712External.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "6d2ca41e2d8a4e0ee78c415e001ffcf8",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/EIP712External.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/cryptography/draft-EIP712.sol",
+        "../utils/cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EIP712External"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/metatx/MinimalForwarder.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "371b4dd0b24a7a8be2fb371ee2b52527",
+      "sourceName": "contracts/openzeppelin-contracts/metatx/MinimalForwarder.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/cryptography/ECDSA.sol",
+        "../utils/cryptography/draft-EIP712.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MinimalForwarder"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ECDSAMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "30b1ba3aa464ef4c74c69919dad17b23",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ECDSAMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSAMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC20PermitMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "0ffeabf2d4578ade65c2cd955ac90341",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC20PermitMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/draft-ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PermitMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC20Mock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "0e9278aa8904eeb7b74c1764525f3ca9",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC20Mock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Mock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC20DecimalsMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "d144c3888eefb94f7dfb937e7798fe25",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC20DecimalsMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20DecimalsMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC20/extensions/ERC20Capped.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "f00eceb600c0455c2271ebfb9053f382",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC20/extensions/ERC20Capped.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Capped"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC20CappedMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "a2f724393ab8934e00a5facaca3b3e3a",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC20CappedMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/ERC20Capped.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20CappedMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC20SnapshotMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "1fbe983ed51a8295f6e3b0dc3c938387",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC20SnapshotMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/ERC20Snapshot.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20SnapshotMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/CountersImpl.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "a0209e3cc3901cd3d5c48ef3d23fe21f",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/CountersImpl.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CountersImpl"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC721/extensions/ERC721URIStorage.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "2b16122c5f36625084a7f90f0780937b",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721URIStorage"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC721URIStorageMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "648f90ee9dd92cece0ce540ef76cc9f4",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC721URIStorageMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/extensions/ERC721URIStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721URIStorageMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC721Mock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "5cb53676c8a8dc5537e420e21221b7cd",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC721Mock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Mock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/StringsMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "3ff3c7265d836063e3b76cf3bb705370",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/StringsMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StringsMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/token/ERC721/utils/ERC721Holder.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "1881fdf8f5c2e3f95a00801d67991250",
+      "sourceName": "contracts/openzeppelin-contracts/token/ERC721/utils/ERC721Holder.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Holder"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC721ReceiverMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "06dee71f1e01cc4116c30fdc90264e69",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC721ReceiverMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721ReceiverMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/BadBeacon.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "86fc3ba6fc4143a60e4e5e1ca6f4a42d",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/BadBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BadBeaconNoImpl",
+        "BadBeaconNotContract"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/CallReceiverMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "baad85d35857caff11c22fd98dfa6c4c",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/CallReceiverMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CallReceiverMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ClashingImplementation.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "e48b5b0a919e56bc72f08f6655ce20db",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ClashingImplementation.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ClashingImplementation"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/DummyImplementation.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "c4e5743d8110a9f99dc8670e43c70ded",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/DummyImplementation.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DummyImplementation",
+        "DummyImplementationV2",
+        "Impl"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC165/ERC165MissingData.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "f7a435a8acb3f5f0bcf2c8aa87a6ab6b",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC165/ERC165MissingData.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165MissingData"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/ERC165/ERC165NotSupported.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "23815088878b2d9216e4ac792fcd8e15",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/ERC165/ERC165NotSupported.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165NotSupported"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/EtherReceiverMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "51e66e5a696b499e70c32baed2ce9a3f",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/EtherReceiverMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EtherReceiverMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/MerkleProofWrapper.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "18f13c1bddea757359a33f8ab3158812",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/MerkleProofWrapper.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/cryptography/MerkleProof.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MerkleProofWrapper"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/cryptography/MerkleProof.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "6006f4c579ccd1b2b80e78144c56fe92",
+      "sourceName": "contracts/openzeppelin-contracts/utils/cryptography/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/SafeCastMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "118655efcceb1de795e758c9d7206346",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/SafeCastMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/math/SafeCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeCastMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/math/SafeCast.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "b81f7c2aa371ec13481560a9b63701f9",
+      "sourceName": "contracts/openzeppelin-contracts/utils/math/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/mocks/SignedSafeMathMock.sol": {
+      "lastModificationDate": 1616170592203,
+      "contentHash": "c0abc8207b2fe94f7e6e14bc8f32e130",
+      "sourceName": "contracts/openzeppelin-contracts/mocks/SignedSafeMathMock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/math/SignedSafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedSafeMathMock"
+      ]
+    },
+    "/home/ashton/dev/monft/contracts/openzeppelin-contracts/utils/math/SignedSafeMath.sol": {
+      "lastModificationDate": 1616170592207,
+      "contentHash": "22f39cc4e65cf283981e866296b0d25b",
+      "sourceName": "contracts/openzeppelin-contracts/utils/math/SignedSafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedSafeMath"
       ]
     }
   }

@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ERC165NotSupported",
+  "sourceName": "contracts/openzeppelin-contracts/mocks/ERC165/ERC165NotSupported.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220a1fbbbdb9c76c4b4e657303715112ecb5648e1b48d55e3d0500e4cfcd18574b464736f6c63430008000033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220a1fbbbdb9c76c4b4e657303715112ecb5648e1b48d55e3d0500e4cfcd18574b464736f6c63430008000033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

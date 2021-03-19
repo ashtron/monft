@@ -1,3 +1,42 @@
+compile
+mft
+s2 = signers[1].address
+s1 = signers[0].address
+signers = await ethers.getSigners()
+s1 = signers[0].address
+signer = await ethers.getSigners()
+signer = ethers.getSigners()
+mft = await mft.deploy()
+mft = await ethers.getContractFactory("MonFT")
+mft
+mft.abi
+await mft.ownerOf(2)
+await mft.ownerOf(1)
+await mft.transferFrom(s1, s2, 1)
+s1 = signer.address
+s2 = signers[1].address
+signer.address
+await mft.ownerOf(4)
+await mft.ownerOf(3)
+await mft.ownerOf(2)
+await mft.ownerOf(1)
+await mft.ownerOf(0)
+Number(hello.value)
+hello = await mft.mintMon()
+Number(hello.value)
+hello
+Number(hello)
+Number(await mft.balanceOf(signer.address))
+Number(hello)
+hello
+hello = await mft.mintMon()
+await mft.balanceOf(signer.address)
+await mft.mintMon()
+await mft.balanceOf(signer.address)
+mft = await mft.deploy()
+mft = await ethers.getContractFactory("MonFT")
+signer = signers[0]
+signers = await ethers.getSigners()
 Number(await mft.balanceOf(signers[0].address))
 await mft.mintMon()
 Number(await mft.balanceOf(signers[0].address))

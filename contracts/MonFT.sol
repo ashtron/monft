@@ -21,4 +21,8 @@ contract MonFT is ERC721 {
 
         return newMonId;
     }
+
+    function transferMon(address from, address to, uint256 tokenId) public {
+        safeTransferFrom(from, to, tokenId);
+    }
 }

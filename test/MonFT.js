@@ -21,6 +21,14 @@ describe("MonFT contract", function () {
 
       expect(await monFT.balanceOf(addr1.address)).to.equal(1);
     });
+
+    it("Should give NFTs a gene sequence", async function () {
+        await monFT.mintMon();
+        const geneSequence = Number(await monFT.geneSequences(1));
+
+        // Expect a five-digit gene sequence.
+        expect(String(geneSequence.length === 5));
+      });
   });
 
   describe("transferMon", function () {

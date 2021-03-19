@@ -1,3 +1,14 @@
+await monFT.generateGeneSequence()
+monFT.generateGeneSequence()
+    await monFT.deployed();
+    monFT = await MonFT.deploy();
+    [addr1, addr2, ...addrs] = await ethers.getSigners();
+MonFT = await ethers.getContractFactory("MonFT");
+await monFT.generateGeneSequence()
+    await monFT.deployed();
+    monFT = await MonFT.deploy();
+    [addr1, addr2, ...addrs] = await ethers.getSigners();
+    MonFT = await ethers.getContractFactory("MonFT");
 compile
 mft
 s2 = signers[1].address

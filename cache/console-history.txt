@@ -1,3 +1,99 @@
+Number(await mft.balanceOf(signers[0].address))
+await mft.mintMon()
+Number(await mft.balanceOf(signers[0].address))
+await mft.mintMon()
+Number(await mft.balanceOf(signers[0].address))
+await mft.mintMon()
+Number(await mft.balanceOf(signers[0].address))
+await mft.balanceOf(signers[0].address).toNumber()
+await mft.balanceOf(signers[0].address)
+signers = await ethers.getSigners()
+mft = await mft.deploy()
+mft = await ethers.getContractFactory("MonFT")
+mft = await mft.deploy()
+mft = await ethers.getContractFactory("MonFT")
+signer = signers[0]
+signers = await ethers.getSigners()
+mft = await mft.deploy()
+mft = await ethers.getContractFactory("MonFT")
+signers[0]
+signers = await ethers.getSigners()
+[signer] = await ethers.getSigners()
+ethers.getSigners()
+[signer] = ethers.getSigners()
+mft = await mft.deploy()
+mft = await ethers.getContractFactory("MonFT")
+[signer] = await ethers.getSigners()
+ethers.getSigners()
+[signer] = ethers.getSigners()
+mft.balanceOf(owner)
+mft = await mft.deploy()
+mft = await ethers.getContractFactory("MonFT")
+ethers.getContractFactory("MonFT")
+mft
+owner
+[owner] = await ethers.getSigners();
+await ethers.getSigners()[0]
+await ethers.getSigners()
+ethers.getSigners()
+monft = await monft.deploy()
+monft = await ethers.getContractFactory("MonFT")
+bal.toNumber()
+await mft.mintMon()
+bal.toNumber()
+Number(bal.toString())
+Number(bal)
+await mft.mintMon()
+Number(bal)
+bal = await mft.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266")
+ethers.utils.formatEther(bal)
+await mft.mintMon()
+ethers.utils.formatEther(bal)
+await mft.mintMon()
+ethers.utils.formatEther(bal)
+ethers.utils.formatEther(bal.toString())
+ethers.utils.parseEther(bal.toString())
+ethers.utils.parseEther(bal)
+bal = await mft.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266")
+ethers.utils.parseEther
+ethers.utils
+ethers.utils.parseEther(await mft.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266").toString())
+ethers.utils.parseEther(await mft.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"))
+ethers.parseEther
+ethers
+ethers.fromWei
+utils.toUtf8String(await mft.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"))
+utils.toUtf8String()
+utils
+var utils = require('ethers').utils
+await mft.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266").toNumber()
+BigNumber
+require('ethers').utils;
+BigNumber
+await mft.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266").toNumber()
+await mft.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266")
+mft.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266")
+await ethers.getSigners()
+await ethers.getSigners().first
+typeof(await ethers.getSigners())
+await ethers.getSigners().first
+await ethers.getSigners()
+await ethers.getSigners()[0]
+await ethers.getSigners()
+await ethers.getSigners
+ethers.getSigners
+await mft.mintMon()
+typeof(minted)
+minted
+minted.toNumber()
+minted = await mft.mintMon()
+await mft.mintMon()
+mft = await mft.deploy()
+mft = await ethers.getContractFactory("MonFT")
+mft
+mft.abi
+mft = await mft.deploy()
+mft = await ethers.getContractFactory("MonFT")
 await monft.testString()
 monft.testString()
 monft = await monft.deploy()

@@ -72,8 +72,8 @@
       ]
     },
     "/home/ashton/dev/monft/contracts/MonFT.sol": {
-      "lastModificationDate": 1616170684111,
-      "contentHash": "f14801f9892a70dbf29888e087f80c02",
+      "lastModificationDate": 1616171656368,
+      "contentHash": "5de870b9489d542bd988d3e436c8370e",
       "sourceName": "contracts/MonFT.sol",
       "solcConfig": {
         "version": "0.8.0",
@@ -98,7 +98,8 @@
         }
       },
       "imports": [
-        "./openzeppelin-contracts/token/ERC721/ERC721.sol"
+        "./openzeppelin-contracts/token/ERC721/ERC721.sol",
+        "./openzeppelin-contracts/utils/Counters.sol"
       ],
       "versionPragmas": [
         "^0.8.0"

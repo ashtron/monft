@@ -21,6 +21,7 @@ import { WaitingForTransactionMessage } from "./WaitingForTransactionMessage";
 import { NoTokensMessage } from "./NoTokensMessage";
 import { MonsterDisplay } from "./MonsterDisplay";
 import { Mint } from "./Mint";
+import { Mutate } from "./Mutate"
 
 // This is the Hardhat Network id, you might change it in the hardhat.config.js
 // Here's a list of network ids https://docs.metamask.io/guide/ethereum-provider.html#properties
@@ -56,13 +57,15 @@ export class Dapp extends React.Component {
       txBeingSent: undefined,
       transactionError: undefined,
       networkError: undefined,
-      dna: undefined
+      dna: undefined,
+      nftExists: false
     };
 
     this.state = this.initialState;
 
     this._mint = this._mint.bind(this);
     this._updateMonFT = this._updateMonFT.bind(this);
+    this._mutate = this._mutate.bind(this);
   }
 
   render() {
@@ -89,6 +92,10 @@ export class Dapp extends React.Component {
       );
     }
 
+    if (!this.state.dna) {
+      return <Loading />;
+    }
+
     // If the token data or the user's balance hasn't loaded yet, we show
     // a loading component.
     // if (!this.state.tokenData || !this.state.balance) {
@@ -109,11 +116,12 @@ export class Dapp extends React.Component {
         <hr />
 
         <div className="row">
-          <MonsterDisplay dna={this.state.dna ? this.state.dna : "nothing"} />
+          <MonsterDisplay dna={this.state.dna} nftExists={this.state.nftExists} />
         </div>
 
         <div className="row">
           <Mint mint={this._mint} />
+          <Mutate mutate={this._mutate} />
         </div>
       </div>
     );
@@ -216,9 +224,10 @@ export class Dapp extends React.Component {
   }
 
   async _updateMonFT() {
-    const dna = (await this._monFT.getFaceData(1)).concat(await this._monFT.getBodyData(1)).toString();
+    const dnaBigNums = (await this._monFT.getBodyData(1)).concat(await this._monFT.getFaceData(1));
+    const dna = dnaBigNums.map(gene => Number(gene));
     this.setState({ dna: dna });
-    console.log(this.state.dna)
+    console.log(this.state.dna);
   }
 
   _stopPollingData() {
@@ -237,6 +246,11 @@ export class Dapp extends React.Component {
 
   async _mint() {
     await this._monFT.mintMon();
+    this.setState({ nftExists: true });
+  }
+
+  async _mutate() {
+    await this._monFT.mutate(1);
   }
 
   async _updateBalance() {

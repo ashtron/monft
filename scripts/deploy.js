@@ -10,7 +10,7 @@ async function main() {
     );
   }
 
-  // ethers is avaialble in the global scope
+  // ethers is available in the global scope
   const [deployer] = await ethers.getSigners();
   console.log(
     "Deploying the contracts with the account:",
@@ -25,11 +25,18 @@ async function main() {
 
   console.log("Token address:", token.address);
 
+  const MonFT = await ethers.getContractFactory("MonFT");
+  const monFT = await MonFT.deploy(4);
+  await monFT.deployed();
+
+  console.log("MonFT address:", monFT.address);
+
   // We also save the contract's artifacts and address in the frontend directory
-  saveFrontendFiles(token);
+  saveTokenFrontendFiles(token, monFT);
+  saveMonFTFrontendFiles(monFT);
 }
 
-function saveFrontendFiles(token) {
+function saveTokenFrontendFiles(token, monFT) {
   const fs = require("fs");
   const contractsDir = __dirname + "/../frontend/src/contracts";
 
@@ -39,7 +46,7 @@ function saveFrontendFiles(token) {
 
   fs.writeFileSync(
     contractsDir + "/contract-address.json",
-    JSON.stringify({ Token: token.address }, undefined, 2)
+    JSON.stringify({ Token: token.address, MonFT: monFT.address }, undefined, 2)
   );
 
   const TokenArtifact = artifacts.readArtifactSync("Token");
@@ -47,6 +54,22 @@ function saveFrontendFiles(token) {
   fs.writeFileSync(
     contractsDir + "/Token.json",
     JSON.stringify(TokenArtifact, null, 2)
+  );
+}
+
+function saveMonFTFrontendFiles(monFT) {
+  const fs = require("fs");
+  const contractsDir = __dirname + "/../frontend/src/contracts";
+
+  if (!fs.existsSync(contractsDir)) {
+    fs.mkdirSync(contractsDir);
+  }
+
+  const MonFTArtifact = artifacts.readArtifactSync("MonFT");
+
+  fs.writeFileSync(
+    contractsDir + "/MonFT.json",
+    JSON.stringify(MonFTArtifact, null, 2)
   );
 }
 

@@ -58,6 +58,7 @@ export class Dapp extends React.Component {
       transactionError: undefined,
       networkError: undefined,
       dna: undefined,
+      nftId: undefined,
       nftExists: false
     };
 
@@ -66,6 +67,7 @@ export class Dapp extends React.Component {
     this._mint = this._mint.bind(this);
     this._updateMonFT = this._updateMonFT.bind(this);
     this._mutate = this._mutate.bind(this);
+    this._transferMon = this._transferMon.bind(this);
   }
 
   render() {
@@ -122,6 +124,10 @@ export class Dapp extends React.Component {
         <div className="row">
           <Mint mint={this._mint} />
           <Mutate mutate={this._mutate} />
+        </div>
+
+        <div className="row">
+          <Transfer from={this.state.selectedAddress} transferMon={this._transferMon} />
         </div>
       </div>
     );
@@ -185,7 +191,6 @@ export class Dapp extends React.Component {
     // Fetching the token data and the user's balance are specific to this
     // sample project, but you can reuse the same initialization pattern.
     this._intializeEthers();
-    this._getTokenData();
     this._startPollingData();
   }
 
@@ -220,28 +225,23 @@ export class Dapp extends React.Component {
 
     // We run it once immediately so we don't have to wait for it
     // this._updateBalance();
+    this._updateBalance();
     this._updateMonFT();
   }
 
   async _updateMonFT() {
     const dnaBigNums = (await this._monFT.getBodyData(1)).concat(await this._monFT.getFaceData(1));
     const dna = dnaBigNums.map(gene => Number(gene));
-    this.setState({ dna: dna });
+
+    const id = await this._monFT.tokenOfOwnerByIndex(this.state.selectedAddress, 0);
+  
+    this.setState({ dna: dna, nftId: Number(id) });
     console.log(this.state.dna);
   }
 
   _stopPollingData() {
     clearInterval(this._pollDataInterval);
     this._pollDataInterval = undefined;
-  }
-
-  // The next two methods just read from the contract and store the results
-  // in the component state.
-  async _getTokenData() {
-    const name = await this._token.name();
-    const symbol = await this._token.symbol();
-
-    this.setState({ tokenData: { name, symbol } });
   }
 
   async _mint() {
@@ -254,12 +254,18 @@ export class Dapp extends React.Component {
       gasLimit: 307580
     }
 
-    await this._monFT.mutate(1, overrides);
+    if (this.state.balance) {
+      await this._monFT.mutate(1, overrides);
+    }
   }
 
   async _updateBalance() {
-    const balance = await this._token.balanceOf(this.state.selectedAddress);
+    const balance = await this._monFT.balanceOf(this.state.selectedAddress);
     this.setState({ balance });
+  }
+
+  async _transferMon(from, to, id) {
+    await this._monFT.transferMon(from, to, id);
   }
 
   // This method sends an ethereum transaction to transfer tokens.

@@ -2,12 +2,12 @@
 
 pragma solidity ^0.8.0;
 
-import "./openzeppelin-contracts/token/ERC721/ERC721.sol";
+import "./openzeppelin-contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "./openzeppelin-contracts/utils/Counters.sol";
 
 // https://docs.openzeppelin.com/contracts/4.x-rc/erc721
 
-contract MonFT is ERC721 {
+contract MonFT is ERC721Enumerable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
     uint256 public dnaLength;

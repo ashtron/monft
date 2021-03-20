@@ -11,7 +11,7 @@ describe("MonFT contract", function () {
     MonFT = await ethers.getContractFactory("MonFT");
     [addr1, addr2, ...addrs] = await ethers.getSigners();
 
-    monFT = await MonFT.deploy(5);
+    monFT = await MonFT.deploy(2);
     await monFT.deployed();
   });
 
@@ -19,9 +19,7 @@ describe("MonFT contract", function () {
     it("Should mint NFTs", async function () {
       await monFT.mintMon();
 
-      console.log(await monFT.getFaceData(1), await monFT.getBodyData(1));
-
-      // expect(await monFT.balanceOf(addr1.address)).to.equal(1);
+      console.log(await monFT.getFaceData(1), await monFT.getBodyData(1));      
     });
 
     // it("Should give NFTs a gene sequence", async function () {

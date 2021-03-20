@@ -118,7 +118,7 @@ export class Dapp extends React.Component {
         <hr />
 
         <div className="row">
-          <MonsterDisplay dna={this.state.dna} nftExists={this.state.nftExists} />
+          { this.state.balance && this.state.balance > 0 ? <MonsterDisplay dna={this.state.dna} nftExists={this.state.nftExists} /> : null }
         </div>
 
         <div className="row">
@@ -232,10 +232,8 @@ export class Dapp extends React.Component {
   async _updateMonFT() {
     const dnaBigNums = (await this._monFT.getBodyData(1)).concat(await this._monFT.getFaceData(1));
     const dna = dnaBigNums.map(gene => Number(gene));
-
-    const id = await this._monFT.tokenOfOwnerByIndex(this.state.selectedAddress, 0);
   
-    this.setState({ dna: dna, nftId: Number(id) });
+    this.setState({ dna: dna });
     console.log(this.state.dna);
   }
 
@@ -260,12 +258,13 @@ export class Dapp extends React.Component {
   }
 
   async _updateBalance() {
-    const balance = await this._monFT.balanceOf(this.state.selectedAddress);
+    const balance = Number(await this._monFT.balanceOf(this.state.selectedAddress));
     this.setState({ balance });
   }
 
   async _transferMon(from, to, id) {
     await this._monFT.transferMon(from, to, id);
+    this.setState({ balance: 0 });
   }
 
   // This method sends an ethereum transaction to transfer tokens.

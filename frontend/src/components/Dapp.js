@@ -221,12 +221,17 @@ export class Dapp extends React.Component {
   // don't need to poll it. If that's the case, you can just fetch it when you
   // initialize the app, as we do with the token data.
   _startPollingData() {
-    this._pollDataInterval = setInterval(() => this._updateMonFT(), 1000);
+    this._pollDataInterval = setInterval(() => this._update(), 1000);
 
     // We run it once immediately so we don't have to wait for it
     // this._updateBalance();
     this._updateBalance();
     this._updateMonFT();
+  }
+
+  _update() {
+    this._updateMonFT();
+    this._updateBalance();
   }
 
   async _updateMonFT() {
@@ -264,7 +269,6 @@ export class Dapp extends React.Component {
 
   async _transferMon(from, to, id) {
     await this._monFT.transferMon(from, to, id);
-    this.setState({ balance: 0 });
   }
 
   // This method sends an ethereum transaction to transfer tokens.

@@ -41,6 +41,36 @@ contract MonFT is ERC721 {
         return newMonId;
     }
 
+    function mutate(uint256 tokenId) public {
+        // Choose the part to mutate.
+        uint256 partIndex = generateRandomNumber(7);
+
+        // Choose the new part.
+        uint256 newPartIndex = generateRandomNumber(numOptions);
+
+        // Need to think of a more elegant method.
+        if (partIndex == 1) {
+            dnaSequences[tokenId].arms = getIndex(dnaSequences[tokenId].arms, newPartIndex);
+        } else if (partIndex == 2) {
+            dnaSequences[tokenId].ears = getIndex(dnaSequences[tokenId].ears, newPartIndex);
+        } else if (partIndex == 3) {
+            dnaSequences[tokenId].eyes = getIndex(dnaSequences[tokenId].eyes, newPartIndex);
+        } else if (partIndex == 4) {
+            dnaSequences[tokenId].legs = getIndex(dnaSequences[tokenId].legs, newPartIndex);
+        } else if (partIndex == 5) {
+            dnaSequences[tokenId].nose = getIndex(dnaSequences[tokenId].nose, newPartIndex);
+        } else if (partIndex == 6) {
+            dnaSequences[tokenId].mouth = getIndex(dnaSequences[tokenId].mouth, newPartIndex);
+        } else if (partIndex == 7) {
+            dnaSequences[tokenId].wings = getIndex(dnaSequences[tokenId].wings, newPartIndex);
+        }
+    }
+
+    function transferMon(address from, address to, uint256 tokenId) public {
+        mutate(tokenId);
+        safeTransferFrom(from, to, tokenId);
+    }
+
     function initializeDna(uint256 tokenId) public {
         dnaSequences[tokenId] = dna({
             arms: 0,
@@ -54,43 +84,6 @@ contract MonFT is ERC721 {
             mutations: 0
         });
     }
-
-    // function generateRandomNumber() public view returns (int256) {
-    //     // Pseudorandom for now.
-        
-    //     int randomNumber = abs(int(uint(keccak256(abi.encodePacked("500dfasdfasdfdfas"))) % 10));
-    //     return abs(randomNumber - int(numOptions));
-    // }
-
-    function generateRandomNumber() public view returns (uint256) {
-        uint256 randomNumber = uint(keccak256(abi.encodePacked(block.timestamp, msg.sender))) % numOptions;
-        return randomNumber;
-    }
-
-    function abs(int x) private pure returns (int) {
-        return x >= 0 ? x : -x;
-    }
-
-    function numDigits(int number) private pure returns (uint8) {
-        uint8 digits = 0;
-
-        while (number != 0) {
-            number /= 10;
-            digits++;
-        }
-
-        return digits;
-    }
-
-    // function mutate(uint256 tokenId) public {
-    //     uint256 newdna = generatedna();
-    //     dnaSequences[tokenId] = newdna;
-    // }
-
-    // function transferMon(address from, address to, uint256 tokenId) public {
-    //     mutate(tokenId);
-    //     safeTransferFrom(from, to, tokenId);
-    // }
 
     // Gene data getter split into two functions to avoid stack too deep error.
     function getFaceData(uint256 tokenId) public view returns (uint256, uint256, uint256, uint256) {
@@ -109,5 +102,15 @@ contract MonFT is ERC721 {
             dnaSequences[tokenId].legs,
             dnaSequences[tokenId].wings
         );
+    }
+
+    function generateRandomNumber(uint256 max) public view returns (uint256) {
+        uint256 randomNumber = uint(keccak256(abi.encodePacked(block.timestamp, msg.sender))) % max;
+        return randomNumber + 1; // Add 1 to avoid 0 (no part).
+    }
+
+    function getIndex(uint256 current, uint256 index) private view returns (uint256) {
+        // Make sure the part changes.
+        return index == current ? (index + 1) % numOptions : index;
     }
 }

@@ -20,6 +20,7 @@ import { TransactionErrorMessage } from "./TransactionErrorMessage";
 import { WaitingForTransactionMessage } from "./WaitingForTransactionMessage";
 import { NoTokensMessage } from "./NoTokensMessage";
 import { MonsterDisplay } from "./MonsterDisplay";
+import { Mint } from "./Mint";
 
 // This is the Hardhat Network id, you might change it in the hardhat.config.js
 // Here's a list of network ids https://docs.metamask.io/guide/ethereum-provider.html#properties
@@ -58,6 +59,8 @@ export class Dapp extends React.Component {
     };
 
     this.state = this.initialState;
+
+    this._mint = this._mint.bind(this);
   }
 
   render() {
@@ -105,6 +108,10 @@ export class Dapp extends React.Component {
 
         <div className="row">
           <MonsterDisplay />
+        </div>
+
+        <div className="row">
+          <Mint mint={this._mint} />
         </div>
       </div>
     );
@@ -217,6 +224,10 @@ export class Dapp extends React.Component {
     const symbol = await this._token.symbol();
 
     this.setState({ tokenData: { name, symbol } });
+  }
+
+  async _mint() {
+    await this._monFT.mintMon();
   }
 
   async _updateBalance() {

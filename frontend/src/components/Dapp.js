@@ -250,7 +250,11 @@ export class Dapp extends React.Component {
   }
 
   async _mutate() {
-    await this._monFT.mutate(1);
+    const overrides = {
+      gasLimit: 307580
+    }
+
+    await this._monFT.mutate(1, overrides);
   }
 
   async _updateBalance() {

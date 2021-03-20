@@ -43,7 +43,7 @@ contract MonFT is ERC721 {
 
     function mutate(uint256 tokenId) public {
         // Choose the part to mutate.
-        uint256 partIndex = generateRandomNumber(7);
+        uint256 partIndex = generateRandomNumber(8);
 
         // Choose the new part.
         uint256 newPartIndex = generateRandomNumber(numOptions);
@@ -52,17 +52,19 @@ contract MonFT is ERC721 {
         if (partIndex == 1) {
             dnaSequences[tokenId].arms = getIndex(dnaSequences[tokenId].arms, newPartIndex);
         } else if (partIndex == 2) {
-            dnaSequences[tokenId].ears = getIndex(dnaSequences[tokenId].ears, newPartIndex);
+            dnaSequences[tokenId].body = getIndex(dnaSequences[tokenId].body, newPartIndex);
         } else if (partIndex == 3) {
-            dnaSequences[tokenId].eyes = getIndex(dnaSequences[tokenId].eyes, newPartIndex);
-        } else if (partIndex == 4) {
             dnaSequences[tokenId].legs = getIndex(dnaSequences[tokenId].legs, newPartIndex);
-        } else if (partIndex == 5) {
-            dnaSequences[tokenId].nose = getIndex(dnaSequences[tokenId].nose, newPartIndex);
-        } else if (partIndex == 6) {
-            dnaSequences[tokenId].mouth = getIndex(dnaSequences[tokenId].mouth, newPartIndex);
-        } else if (partIndex == 7) {
+        } else if (partIndex == 4) {
             dnaSequences[tokenId].wings = getIndex(dnaSequences[tokenId].wings, newPartIndex);
+        } else if (partIndex == 5) {
+            dnaSequences[tokenId].ears = getIndex(dnaSequences[tokenId].ears, newPartIndex);
+        } else if (partIndex == 6) {
+            dnaSequences[tokenId].eyes = getIndex(dnaSequences[tokenId].eyes, newPartIndex);
+        } else if (partIndex == 7) {
+            dnaSequences[tokenId].nose = getIndex(dnaSequences[tokenId].nose, newPartIndex);
+        } else if (partIndex == 8) {
+            dnaSequences[tokenId].mouth = getIndex(dnaSequences[tokenId].mouth, newPartIndex);
         }
     }
 
@@ -86,21 +88,21 @@ contract MonFT is ERC721 {
     }
 
     // Gene data getter split into two functions to avoid stack too deep error.
-    function getFaceData(uint256 tokenId) public view returns (uint256, uint256, uint256, uint256) {
-        return (
-            dnaSequences[tokenId].ears,
-            dnaSequences[tokenId].eyes,
-            dnaSequences[tokenId].nose,
-            dnaSequences[tokenId].mouth
-        );
-    }
-
     function getBodyData(uint256 tokenId) public view returns (uint256, uint256, uint256, uint256) {
         return (
             dnaSequences[tokenId].arms,
             dnaSequences[tokenId].body,
             dnaSequences[tokenId].legs,
             dnaSequences[tokenId].wings
+        );
+    }
+    
+    function getFaceData(uint256 tokenId) public view returns (uint256, uint256, uint256, uint256) {
+        return (
+            dnaSequences[tokenId].ears,
+            dnaSequences[tokenId].eyes,
+            dnaSequences[tokenId].nose,
+            dnaSequences[tokenId].mouth
         );
     }
 

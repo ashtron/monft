@@ -56,11 +56,13 @@ export class Dapp extends React.Component {
       txBeingSent: undefined,
       transactionError: undefined,
       networkError: undefined,
+      dna: undefined
     };
 
     this.state = this.initialState;
 
     this._mint = this._mint.bind(this);
+    this._updateMonFT = this._updateMonFT.bind(this);
   }
 
   render() {
@@ -89,9 +91,9 @@ export class Dapp extends React.Component {
 
     // If the token data or the user's balance hasn't loaded yet, we show
     // a loading component.
-    if (!this.state.tokenData || !this.state.balance) {
-      return <Loading />;
-    }
+    // if (!this.state.tokenData || !this.state.balance) {
+    //   return <Loading />;
+    // }
 
     // If everything is loaded, we render the application.
     return (
@@ -206,10 +208,16 @@ export class Dapp extends React.Component {
   // don't need to poll it. If that's the case, you can just fetch it when you
   // initialize the app, as we do with the token data.
   _startPollingData() {
-    this._pollDataInterval = setInterval(() => this._updateBalance(), 1000);
+    this._pollDataInterval = setInterval(() => this._updateMonFT(), 1000);
 
     // We run it once immediately so we don't have to wait for it
-    this._updateBalance();
+    // this._updateBalance();
+    this._updateMonFT();
+  }
+
+  async _updateMonFT() {
+    const dna = (await this._monFT.getFaceData(1)).concat(await this._monFT.getBodyData(1));
+    this.setState({ dna: dna });
   }
 
   _stopPollingData() {
@@ -276,7 +284,8 @@ export class Dapp extends React.Component {
 
       // If we got here, the transaction was successful, so you may want to
       // update your state. Here, we update the user's balance.
-      await this._updateBalance();
+      // await this._updateBalance();
+      await this._updateMonFT();
     } catch (error) {
       // We check the error code to see if this error was produced because the
       // user rejected a tx. If that's the case, we do nothing.

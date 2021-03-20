@@ -1,7 +1,7 @@
 import React from "react";
 
-export function MonsterDisplay() {
+export function MonsterDisplay({ dna }) {
   return (
-    <div>Hello</div>
+    <div>{dna}</div>
   );
 }

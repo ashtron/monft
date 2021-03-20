@@ -109,7 +109,7 @@ export class Dapp extends React.Component {
         <hr />
 
         <div className="row">
-          <MonsterDisplay />
+          <MonsterDisplay dna={this.state.dna ? this.state.dna : "nothing"} />
         </div>
 
         <div className="row">
@@ -216,8 +216,9 @@ export class Dapp extends React.Component {
   }
 
   async _updateMonFT() {
-    const dna = (await this._monFT.getFaceData(1)).concat(await this._monFT.getBodyData(1));
+    const dna = (await this._monFT.getFaceData(1)).concat(await this._monFT.getBodyData(1)).toString();
     this.setState({ dna: dna });
+    console.log(this.state.dna)
   }
 
   _stopPollingData() {

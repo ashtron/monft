@@ -1,3 +1,11 @@
+Number(await monFT.getSequenceData(1))
+await monFT.getSequenceData(1)
+await monFT.getSequenceData()
+await monFt.getSequenceData()
+    await monFT.deployed();
+    monFT = await MonFT.deploy(5);
+    [addr1, addr2, ...addrs] = await ethers.getSigners();
+    MonFT = await ethers.getContractFactory("MonFT");
 await monFT.generateGeneSequence()
 monFT.generateGeneSequence()
     await monFT.deployed();

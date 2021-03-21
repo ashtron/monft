@@ -19,7 +19,7 @@ export function MonsterDisplay({ dna, nftExists, balance }) {
     ]
 
     return (
-        <div style={{ width: 500, height: 500 }}>
+        <div style={{ width: 500, height: 500, marginTop: 105 }}>
             { balance && balance > 0 ? image : null }
         </div>
     );

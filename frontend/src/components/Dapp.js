@@ -15,7 +15,8 @@ import { WaitingForTransactionMessage } from "./WaitingForTransactionMessage";
 import { NoTokensMessage } from "./NoTokensMessage";
 import { MonsterDisplay } from "./MonsterDisplay";
 import { Mint } from "./Mint";
-import { Mutate } from "./Mutate"
+import { Mutate } from "./Mutate";
+import { Header } from "./Header";
 
 const HARDHAT_NETWORK_ID = '31337';
 
@@ -45,6 +46,8 @@ export class Dapp extends React.Component {
   }
 
   render() {
+    document.body.style = "background: #00ccff;";
+
     if (window.ethereum === undefined) {
       return <NoWalletDetected />;
     }
@@ -65,18 +68,10 @@ export class Dapp extends React.Component {
 
     return (
       <div className="container p-4">
-        <div className="row">
-          <div className="col-12">
-            <h1>
-              MonFT
-            </h1>
-          </div>
-        </div>
-
-        <hr />
+        <Header />
 
         <div className="row justify-content-md-center">
-          { this.state.balance && this.state.balance > 0 ? <MonsterDisplay dna={this.state.dna} nftExists={this.state.nftExists} balance={this.state.balance} /> : null }
+          <MonsterDisplay dna={this.state.dna} nftExists={this.state.nftExists} balance={this.state.balance} />
         </div>
 
         <div className="row justify-content-md-center" style={{ marginBottom: 15 }}>
@@ -193,7 +188,11 @@ export class Dapp extends React.Component {
   }
 
   async _transferMon(from, to, id) {
-    await this._monFT.transferMon(from, to, id);
+    const overrides = {
+      gasLimit: 307580
+    }
+
+    await this._monFT.transferMon(from, to, id, overrides);
   }
 
   _dismissTransactionError() {

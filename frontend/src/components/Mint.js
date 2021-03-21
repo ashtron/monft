@@ -9,7 +9,7 @@ export function Mint({ mint }) {
   return (
     <div>
       <button style={styles} onClick={mint}>
-        <img src={require(`../mint_button_1.png`)} style={{ width: 225 }}></img>
+        <img src={require(`../assets/button_mint_1.png`)} style={{ width: 225 }}></img>
       </button>
     </div>
   );

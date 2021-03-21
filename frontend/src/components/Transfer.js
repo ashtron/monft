@@ -1,6 +1,11 @@
 import React from "react";
 
 export function Transfer({ from, transferMon }) {
+  const styles = {
+    background: "none",
+    border: "none",
+  }
+
   return (
     <div>
       <form
@@ -17,7 +22,9 @@ export function Transfer({ from, transferMon }) {
       >
 
         <div className="row justify-content-md-center" style={{ marginBottom: 15 }}>
-          <input className="btn btn-primary" type="submit" value="Transfer" />
+          <button style={styles} type="submit" value="Transfer">
+            <img src={require(`../assets/button_transfer_1.png`)} style={{ width: 225 }}></img>
+          </button>
         </div>
 
         <div className="row justify-content-md-center" style={{ marginBottom: 15 }}>

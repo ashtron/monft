@@ -8,7 +8,7 @@ Built using [Hardhat Hackathon Boilerplate](https://github.com/nomiclabs/hardhat
 
 # Instructions
 
-## Running Locally
+## Local
 
 ```sh
 git clone https://github.com/ashtron/monft.git
@@ -36,7 +36,14 @@ cd frontend
 npm i
 npm start
 ```
-You will need to have [Metamask](https://metamask.io) installed and listening to
+You will need to have [MetaMask](https://metamask.io) installed and listening to
 `localhost 8545` with Chain ID `31337`.
 
 ## Kovan
+
+Get some [Kovan ETH](https://github.com/kovan-testnet/faucet). You'll need to load up two different addresses if you want
+to try mutating on transfer, but you can also cheat by using the "Mutate" button.
+
+Point your browser at [https://monft.surge.sh/](https://monft.surge.sh/).
+
+Connect your wallet and try it out!

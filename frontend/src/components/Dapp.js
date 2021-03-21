@@ -155,11 +155,20 @@ export class Dapp extends React.Component {
   }
 
   async _updateMonFT() {
-    const dnaBigNums = (await this._monFT.getBodyData(1)).concat(await this._monFT.getFaceData(1));
-    const dna = dnaBigNums.map(gene => Number(gene));
-  
-    this.setState({ dna: dna });
-    console.log(this.state.dna);
+    if (this.state.balance && this.state.balance > 0) {
+      const nftId = await this._monFT.tokenOfOwnerByIndex(this.state.selectedAddress, 0);
+      const dnaBigNums = (await this._monFT.getBodyData(nftId)).concat(await this._monFT.getFaceData(nftId));
+      const dna = dnaBigNums.map(gene => Number(gene));
+    
+      this.setState({ dna: dna });
+      console.log(this.state.dna);
+    } else {
+      const dnaBigNums = (await this._monFT.getBodyData(1)).concat(await this._monFT.getFaceData(1));
+      const dna = dnaBigNums.map(gene => Number(gene));
+    
+      this.setState({ dna: dna });
+      console.log(this.state.dna);
+    }
   }
 
   _stopPollingData() {

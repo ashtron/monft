@@ -98,7 +98,7 @@ export class Dapp extends React.Component {
         <hr />
 
         <div className="row justify-content-md-center">
-          { this.state.balance && this.state.balance > 0 ? <MonsterDisplay dna={this.state.dna} nftExists={this.state.nftExists} /> : null }
+          { this.state.balance && this.state.balance > 0 ? <MonsterDisplay dna={this.state.dna} nftExists={this.state.nftExists} balance={this.state.balance} /> : null }
         </div>
 
         <div className="row justify-content-md-center" style={{ marginBottom: 15 }}>

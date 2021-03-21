@@ -48,12 +48,8 @@ export class Dapp extends React.Component {
     // We store multiple things in Dapp's state.
     // You don't need to follow this pattern, but it's an useful example.
     this.initialState = {
-      // The info of the token (i.e. It's Name and symbol)
-      tokenData: undefined,
-      // The user's address and balance
       selectedAddress: undefined,
       balance: undefined,
-      // The ID about transactions being sent, and any possible error with them
       txBeingSent: undefined,
       transactionError: undefined,
       networkError: undefined,
@@ -71,19 +67,10 @@ export class Dapp extends React.Component {
   }
 
   render() {
-    // Ethereum wallets inject the window.ethereum object. If it hasn't been
-    // injected, we instruct the user to install MetaMask.
     if (window.ethereum === undefined) {
       return <NoWalletDetected />;
     }
 
-    // The next thing we need to do, is to ask the user to connect their wallet.
-    // When the wallet gets connected, we are going to save the users's address
-    // in the component's state. So, if it hasn't been saved yet, we have
-    // to show the ConnectWallet component.
-    //
-    // Note that we pass it a callback that is going to be called when the user
-    // clicks a button. This callback just calls the _connectWallet method.
     if (!this.state.selectedAddress) {
       return (
         <ConnectWallet 
@@ -98,13 +85,6 @@ export class Dapp extends React.Component {
       return <Loading />;
     }
 
-    // If the token data or the user's balance hasn't loaded yet, we show
-    // a loading component.
-    // if (!this.state.tokenData || !this.state.balance) {
-    //   return <Loading />;
-    // }
-
-    // If everything is loaded, we render the application.
     return (
       <div className="container p-4">
         <div className="row">
@@ -117,16 +97,16 @@ export class Dapp extends React.Component {
 
         <hr />
 
-        <div className="row">
+        <div className="row justify-content-md-center">
           { this.state.balance && this.state.balance > 0 ? <MonsterDisplay dna={this.state.dna} nftExists={this.state.nftExists} /> : null }
         </div>
 
-        <div className="row">
+        <div className="row justify-content-md-center">
           <Mint mint={this._mint} />
           <Mutate mutate={this._mutate} />
         </div>
 
-        <div className="row">
+        <div className="row justify-content-md-center">
           <Transfer from={this.state.selectedAddress} transferMon={this._transferMon} />
         </div>
       </div>

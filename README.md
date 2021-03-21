@@ -1,4 +1,4 @@
-# MoNFT
+# MonFT
 
 Mint a monster that evolves when traded!
 

@@ -18,8 +18,13 @@ export function MonsterDisplay({ dna, nftExists, balance }) {
         dna[7] > 0 ? <img style={ imageStyles } src={require(`../parts/wings_0001.svg`)}></img> : null
     ]
 
+    const hasBalance = balance && balance > 0;
+    const margin = hasBalance ? 105 : 200;
+    const width = hasBalance ? 500 : 0;
+    const height = hasBalance ? 500 : 0;
+
     return (
-        <div style={{ width: 500, height: 500, marginTop: 105 }}>
+        <div style={{ width: width, height: height, marginTop: margin }}>
             { balance && balance > 0 ? image : null }
         </div>
     );

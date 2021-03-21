@@ -8,7 +8,7 @@ export function MonsterDisplay({ dna, nftExists, balance }) {
     }
 
     const image = [
-        dna[0] > 0 ? <img style={ imageStyles } src={require(`../parts/arms_000${dna[0]}.svg`)}></img> : null,
+        dna[0] > 0 ? <img style={{ ...imageStyles, zIndex: 2 }} src={require(`../parts/arms_000${dna[0]}.svg`)}></img> : null,
         <img style={ imageStyles } src={require(`../parts/body_0001.svg`)}></img>,
         dna[2] > 0 ? <img style={ imageStyles } src={require(`../parts/ears_000${dna[2]}.svg`)}></img> : null,
         dna[3] > 0 ? <img style={ imageStyles } src={require(`../parts/eyes_000${dna[3]}.svg`)}></img> : null,

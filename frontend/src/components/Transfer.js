@@ -3,7 +3,6 @@ import React from "react";
 export function Transfer({ from, transferMon }) {
   return (
     <div>
-      <h4>Transfer</h4>
       <form
         onSubmit={(event) => {
           event.preventDefault();
@@ -17,12 +16,12 @@ export function Transfer({ from, transferMon }) {
         }}
       >
 
-        <div className="form-group">
-          <label>Recipient address</label>
-          <input className="form-control" type="text" name="to" required />
-        </div>
-        <div className="form-group">
+        <div className="row justify-content-md-center" style={{ marginBottom: 15 }}>
           <input className="btn btn-primary" type="submit" value="Transfer" />
+        </div>
+
+        <div className="row justify-content-md-center" style={{ marginBottom: 15 }}>
+          <input className="form-control" type="text" name="to" placeholder="Address" required />
         </div>
       </form>
     </div>

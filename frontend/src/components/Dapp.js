@@ -101,12 +101,15 @@ export class Dapp extends React.Component {
           { this.state.balance && this.state.balance > 0 ? <MonsterDisplay dna={this.state.dna} nftExists={this.state.nftExists} /> : null }
         </div>
 
-        <div className="row justify-content-md-center">
+        <div className="row justify-content-md-center" style={{ marginBottom: 15 }}>
           <Mint mint={this._mint} />
+        </div>
+
+        <div className="row justify-content-md-center" style={{ marginBottom: 15 }}>
           <Mutate mutate={this._mutate} />
         </div>
 
-        <div className="row justify-content-md-center">
+        <div className="row justify-content-md-center" style={{ marginBottom: 15 }}>
           <Transfer from={this.state.selectedAddress} transferMon={this._transferMon} />
         </div>
       </div>
